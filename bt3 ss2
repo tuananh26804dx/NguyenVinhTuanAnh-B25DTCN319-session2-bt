@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+	int a = 20; // bien so thu nhat
+	int b = 5; // bien so thu hai
+	int tong =  a+b; // tong hai so
+	int hieu = a-b; // hieu hai so
+	int tich = a*b; // tich hai so
+	int thuong = a/b; // thuong hai so
+	//In ket qua ra man hinh
+	printf("Tong: %d+%d = %d\n", a, b, tong);
+	printf("Hieu: %d-%d = %d\n", a, b, hieu);
+	printf("Tich: %d*%d = %d\n", a, b, tich);
+	printf("Thuong: %d/%d = %d\n", a, b, thuong);
+	return 0;
+}
