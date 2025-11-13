@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+	int chieudai = 10; // khai bao chieu dai don vi do dai tuy y
+	int chieurong = 5; //khai bao chieu rong
+	 int chuvi = 2*(chieudai + chieurong);
+	 int dientich = chieudai * chieurong;
+	 
+	 //In ket qua ra man hinh
+	 printf("Chieu dai: %d\n", chieudai);
+	 printf("Chieu rong: %d\n", chieurong);
+	 printf("Chu vi hinh chu nhat: %d\n", chuvi);
+	 printf("Dien tich: %d\n", dientich);
+	 
+	 return 0;
+}
