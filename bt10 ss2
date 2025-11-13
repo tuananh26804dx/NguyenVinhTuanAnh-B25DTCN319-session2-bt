@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h> // can include thu vien nay de su dung sqrt () va fabs()
+int main(){
+	int a=3, b=4, c=2;
+	//khai bao bien kieu double de luu ket qua
+	double S;
+	printf("Gia tri ban dau: a = %d, b = %d, c = %d, c = %d\n ", a, b, c);
+	// kiem tra cac dieu kien mau so khac 0
+	if(c+1==0||c==0){
+		printf("Loi: Mau so (c+1) hoac c=0. Khong the thuc hien phep tinh chia.\n");
+		return 1;
+	}
+	// bien phu de tinh tung phan cua bieu thuc
+	double tuSo_phan1; // a^2+b^2 trong can
+	double phan3_trong_can; // |a-b| +c^2
+	//1. Tinh tu so cua phan dau tien: sqrt(a^2+b^2)
+	tuSo_phan1 = sqrt((double)a * a + (double)b * b);
+	//2. Tinh bieu thuc trong can bac 2 cuoi: |a-b|+c^2
+	phan3_trong_can = fabs((double)a-b) + (double)c * c;
+	//3. Tinh ket qua cua bieu thuc S
+	//S = sqrt(a^2+b^2)/(c+1)+a*b/c-sqrt(|a-b|+c^2)
+	S = tuSo_phan1 / (c+1) + (double)a * b / c - sqrt(phan3_trong_can);
+	//4. IN ket qua ra man hinh
+	printf("Gia tri cua bieu thuc S la: %.2f\n", S);
+	return 0;
+}
