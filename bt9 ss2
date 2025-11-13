@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+int a=2, b=3, c=1;
+// khai bao bien kieu double de luu ket qua
+// vi ket qua co te la so thuc do co phep can bac 2 (sqrt)
+double A;
+//kiem tra dieu kien trong can: (a+b-c)>=0
+if(a+b-c<0){
+	printf("Loi: bieu thuc trong can bac hai am. Khong the tinh.|n");
+	return 1; // tra ve ma loi
+}
+// tinh toan ket qua cua bieu thuc A: A= pow(a,3)+pow(b,2)+2c+sqrt(a+b-c)
+// giai thich cac ham su dung
+// pow(a,3): tinh a luy thua 3 (a^3)
+//pow(b,2): tinh b luy thua 2 (b^2)
+//sqrt(x): tinh can bac hai cua x (x^(1/2))
+A=pow(a,3)+pow(b,2)+(2*c)+sqrt(a+b-c);
+//In ket qua ra man hinh
+printf("Cho a = %d, b = %d, c = %d\n", a, b, c);
+printf("Gia tri cua bieu thuc A = a^3 +b^2 + 2c + sqrt(a+b-c) la:\n");
+printf("A=%.4f\n", A); //In ket qua voi 4 chu so thap phan
+return 0;
+}
