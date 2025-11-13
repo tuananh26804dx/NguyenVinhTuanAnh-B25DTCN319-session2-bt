@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+	int a = 3; //Bien so nguyen thu 1
+	int b = 6;  //Bien so nguyen thu 2
+	float c = 3.6f; // bien so thuc
+	
+	float tong = a+b+c;  //Tong cua 3 bien, luu vao bien float
+	int tongnguyen = a+b+(int)c; //Tong phan nguyen cua 3 bien, ep kieu c ve int
+	//In tong ket qua
+	printf("So nguyen a = %d\n", a);
+	printf("So nguyen b = %d\n", b);
+	printf("So thuc c = %.1f\n", c);
+	printf("Tong 3 so (float) = %.1f\n", tong);
+	printf("Tong phan nguyen 3 so = %d\n", tongnguyen);
+	return 0;
+}
