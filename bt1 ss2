@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+	short a = 10; // short: so nguyen nho, 2 byte
+	int b = 100; // int: so nguyen co kich thuoc trung binh, 4 byte
+	long c = 1000; // long: so nguyen lon hon int, it nhat 4 byte
+	long long d = 10000; // long long: si nguyen rat lon, it nhat 8 byte
+	
+	unsigned short ua = 20; // unsigned short: so nguyen duong nho, 2 byte
+	unsigned int ub = 200; // unsigned int: so nguyen duong co kich thuoc trung binh, 4 byte
+	unsigned long uc = 2000; // unsigned long: so nguyen duong lon hon int, it nhat 4 byte
+	unsigned long long ud = 20000; // unsigned long long: so nguyen duong rat lon, 8 byte
+	
+	char ch = 'A'; // char: kieu ky tu, 1 byte
+	
+	//In gia tri cua cac bien ra man hinh
+	printf("short a = %d\n", a);
+	printf("int b = %d\n", b);
+	printf("long c = %ld\n", c);
+	printf("long long d = %lld\n", d);
+	
+	printf("unssigned short ua = %hu\n", ua);
+	printf("unssigned int ub = %u\n", ub);
+	printf("unssigned long uc = %lhu\n", uc);
+	printf("unssigned long long ud = %llhu\n", ud);
+	
+	printf("char ch = %c\n", ch);
+	
+	return 0;
+}
