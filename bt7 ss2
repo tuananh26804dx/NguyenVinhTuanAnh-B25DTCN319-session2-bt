@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	//1. Khai bao bien va khoi tao gia tri cho bien number
+	int number = 12345;
+	// Khai bao bien de luu tong cac chu so, khoi tao = 0
+	int sum = 0;
+	// Khai bao bien tam de thuc hien viec chia ma khong lam mat gia tri number ban dau
+	int tempNumber =  number;
+	// In ra so ban dau de nguoi dung biet
+	printf("So nguyen ban dau: %d\n", number);
+	// Su dung vong lap while de tach va cong cac chu so
+	while  (tempNumber>0){
+		// Su dung toan tu chia lay du (%) de lay chu so cuoi cung
+		int digit = tempNumber % 10;
+		// Cong chu so vao bien sum
+		sum = sum + digit;
+		// sSu dung toan tu chia nguyen(/) de loai bo chu so cuoi cung
+		tempNumber = tempNumber/10;
+	}
+	//  In ket qua raa man hinh
+	printf("Tong cac chu so cua %d la: %d\n", number, sum);
+	return 0;
+}
